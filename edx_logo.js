@@ -6,12 +6,11 @@
 */
 (function(console) {
   "use strict";
-  var edx_logo_red = 'color: rgba(187,38,105, 0.9);font-size: 55px;font-weight: bolder;font-family: "Microsoft sans serif", "sans-serif", "Arial";line-height: 60%;';
+  var edx_logo_red = 'color: rgba(187,38,105, 0.9);font-size: 55px;font-weight: bold;font-family: "Microsoft sans serif", "SansSerif", "Arial";line-height: 60%;';
   var edx_logo_grey = 'color: rgba(140,143,146, 0.7);font-size: 64px;font-weight: bold;margin-left: -13px;font-family: "FreeMono", "Courier New", "Courier";line-height: 60%;';
   var edx_logo_blue = 'color: rgba(0,165,236, 0.8);font-size: 69px;font-weight: bold;margin-left: -10px;font-family: "FreeMono", "Courier New", "Courier";line-height: 60%;' ;
   var edx_open_blue = 'color: rgba(0,165,236, 1);font-size: 41px;margin-right: -13px;font-family: "Microsoft sans serif", "sans-serif", "Arial";' ;
   var edx_powered_by_light_grey = 'color: rgb(214,215,216); font-size: 19px;font-weight: lighter;';
-  var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
   var ua = navigator.userAgent.toLowerCase();
   var defaults = {
     type: 'auto',
@@ -26,6 +25,13 @@
   var check_string = function(r) {
     return r.test(ua);
   };
+  var firefox_browser_version = function(){
+    var verOffset, fullVersion ;
+    if ((verOffset=ua.indexOf("firefox"))!=-1) {
+      fullVersion = parseInt(ua.substring(verOffset+8));
+    }
+    return fullVersion || 1;
+  }
   var os = function(){
     var isWindows = check_string(/windows|win32/);
     var isMac = check_string(/macintosh|mac os x/);
@@ -52,16 +58,20 @@
   };
   function auto_type(case_type){
     var os_ver = os();
-    var browser_ver = browser();
-    if (browser_ver == 'Firefox' || browser_ver == 'IE' || browser_ver == 'Browser' && case_type == 'image'){
-      console.log(browser_ver + ' does not support images at console.')
-    }else if(browser_ver == 'IE' || browser_ver == 'Browser' && case_type == 'image'){
-      console.log(browser_ver + ' does not support styling at console.')
+    var browser_name = browser();
+    if ((browser_name == 'Firefox' || browser_name == 'IE' || browser_name == 'Browser') && case_type == 'image'){
+      console.log(browser_name + ' does not support images at console.')
+      case_type = 'smalltext';
+    }else if(browser_name == 'Firefox' && firefox_browser_version() < 40){
+      case_type = 'bigtext';
+    }else if((browser_name == 'IE' || browser_name == 'Browser') && case_type == 'css'){
+      case_type = 'smalltext';
+      console.log(browser_name + ' does not support styling at console.')
     }
     if (case_type == 'auto'){
-      if (browser_ver == 'IE' || browser_ver == 'Browser'){
+      if (browser_name == 'IE' || browser_name == 'Browser'){
         case_type = 'smalltext';
-      }else if(browser_ver == 'Chrome' || browser_ver == 'Safari' || browser_ver == 'Opera'){
+      }else if(browser_name == 'Chrome' || browser_name == 'Safari' || browser_name == 'Opera'){
         case_type = 'image';
       }else {
         case_type = 'css';
@@ -88,7 +98,6 @@
       console.log('          ___  __\n  ___  __| \\ \\/ /\n / _ \\/ _` |\\  / \n|  __/ (_| |/  \\ \n \\___|\\__,_/_/\\_\\');
       break;
       default:
-      console.log('Invalid type argument Options are image, css, bigtext, smalltext');
       break;
     }
     log_text_console(log_text, text)
@@ -128,7 +137,6 @@
       }
       break;
       default:
-      console.log('Invalid type argument Options are image, css, bigtext, smalltext');
       break;
     }
     log_text_console(log_text, text)
