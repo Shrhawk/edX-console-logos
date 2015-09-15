@@ -6,8 +6,8 @@
 */
 (function(console) {
   "use strict";
-  var edx_logo_red = 'color: rgba(187,38,105, 0.9);font-size: 55px;font-weight: 900;font-family: "Arial", "Microsoft sans serif", "sans-serif";line-height: 60%;';
-  var edx_logo_grey = 'color: rgba(140,143,146, 0.7);font-size: 65px;font-weight: bold;margin-left: -12px;font-family: "Courier New", "Courier", monospace;line-height: 60%;';
+  var edx_logo_red = 'color: rgba(187,38,105, 0.9);font-size: 53px;font-weight: bolder;font-family: "Microsoft sans serif", "sans-serif", "Arial";line-height: 60%;';
+  var edx_logo_grey = 'color: rgba(140,143,146, 0.7);font-size: 65px;font-weight: bold;margin-left: -13px;font-family: "Courier New", "Courier", monospace;line-height: 60%;';
   var edx_logo_blue = 'color: rgba(0,165,236, 0.8);font-size: 70px;font-weight: bold;margin-left: -10px;font-family: "Courier New", "Courier", monospace;line-height: 60%;' ;
   var edx_open_blue = 'color: rgba(0,165,236, 1);font-size: 41px;margin-right: -13px;font-family: "Microsoft sans serif", "sans-serif", "Arial";' ;
   var edx_powered_by_light_grey = 'color: rgb(214,215,216); font-size: 19px;font-weight: lighter;';
