@@ -30,7 +30,7 @@ console.open_edx_logo();
 		3. **css**: Css versio of logo.
 		4. **smalltext**: Text style line version of logo (old browsers).
 		5. **bigtext**: Big Text style line version of logo (old browsers).
- - **log_text** Show message to show on console.  
+ - **log_text** Show text message on console.  
 ```default: false```
  - **url** Image url of logo in case of ```type:image``` or ```type:auto```  
 ```default (edx_logo): https://d37djvu3ytnwxt.cloudfront.net/static/images/edx-theme/edx-header-logo.517a627deaad.png```  
@@ -39,7 +39,7 @@ console.open_edx_logo();
  - **open_edx_only** For ```open_edx_logo``` only if set ```true``` ignore the ```POWERED BY``` text, work only for css, smalltext, bigtext types  
 ```default: false```
 
-  
+
 
 - **text**  
   Text to show on console along with logo  
