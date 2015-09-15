@@ -61,6 +61,8 @@
     if (case_type == 'auto'){
       if (browser_ver == 'IE' || browser_ver == 'Browser'){
         case_type = 'smalltext';
+      }else if(browser_ver == 'Chrome' || browser_ver == 'Safari' || browser_ver == 'Opera'){
+        case_type = 'image';
       }else {
         case_type = 'css';
       }
