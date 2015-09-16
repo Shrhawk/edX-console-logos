@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>edX Console Logos Demo</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>edX Console Logos playground. Hit Ctrl/CMD + Shift/Opt + J and check it out.</h1>
+    <h2>Examples</h2>
+    <h3>edX Logos</h3>
+    <code>console.edx_logo();</code><br />
+    <code>console.edx_logo({'type':'image'});</code><br />
+    <code>console.edx_logo({'type':'css'});</code><br />
+    <code>console.edx_logo({'type':'smalltext'});</code><br />
+    <code>console.edx_logo({'type':'bigtext'});</code><br />
+    <h3>OPEN edX Logos</h3>
+    <code>console.open_edx_logo();</code><br />
+    <code>console.open_edx_logo({'type':'image'});</code><br />
+    <code>console.open_edx_logo({'type':'css'});</code><br />
+    <code>console.open_edx_logo({'type':'smalltext'});</code><br />
+    <code>console.open_edx_logo({'type':'bigtext'});</code><br />
+  </div>
+</body>
+
+<script src="edx_logo.js" type="text/javascript"></script>
+<script type="text/javascript">
+console.log("************************** edX Logos ***********************");
+console.edx_logo({type:'image'});
+console.log("Css version");
+console.edx_logo({'type':'css'});
+console.log("Smalltext version");
+console.edx_logo({'type':'smalltext'});
+console.log("Bigtext version");
+console.edx_logo({'type':'bigtext'});
+console.log("************************** OPEN edX Logos ***********************");
+// OPEN edX Logo
+console.open_edx_logo({type:'image'});
+console.log("Css version");
+console.open_edx_logo({'type':'css'});
+console.log("Smalltext version");
+console.open_edx_logo({'type':'smalltext'});
+console.log("Bigtext version");
+console.open_edx_logo({'type':'bigtext'});
+</script>
+</html>
