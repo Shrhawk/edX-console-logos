@@ -6,11 +6,11 @@
 */
 (function(console) {
   "use strict";
-  var edx_logo_red = 'color: rgba(187,38,105, 1);font-size: 52px;font-weight: bold;font-family: sans-serif, "SansSerif", "Arial";line-height: 60%;';
-  var edx_logo_grey = 'color: rgba(111,113,116, 0.8);font-size: 63px;font-weight: bold;margin-left: -11px;font-family: "FreeMono", "Courier New", "Courier";line-height: 60%;';
-  var edx_logo_blue = 'color: rgba(2, 149, 222, 0.7);font-size: 68px;font-weight: bold;margin-left: -10px;font-family: "FreeMono", "Courier New", "Courier";line-height: 60%;' ;
-  var edx_open_blue = 'color: rgb(39,164,221);font-size: 37px;margin-right: -10px;font-family: sans-serif, "SansSerif", "Arial";' ;
-  var edx_powered_by_light_grey = 'color: rgb(150,150,150); font-size: 16px;font-weight: lighter;font-family: sans-serif, "SansSerif", "Arial";';
+  var edx_logo_red = 'color: rgba(187,38,105, 1);font-size: 52px;font-weight: bold;font-family: sans-serif, Arial;line-height: 60%;';
+  var edx_logo_grey = 'color: rgba(111,113,116, 0.8);font-size: 63px;font-weight: bold;margin-left: -11px;font-family: "Courier New", Courier;line-height: 60%;';
+  var edx_logo_blue = 'color: rgba(2, 149, 222, 0.7);font-size: 68px;font-weight: bold;margin-left: -10px;font-family: "Courier New", Courier;line-height: 60%;' ;
+  var edx_open_blue = 'color: rgb(39,164,221);font-size: 37px;margin-right: -10px;font-family: sans-serif, Arial;' ;
+  var edx_powered_by_light_grey = 'color: rgb(150,150,150); font-size: 16px;font-weight: lighter;font-family: sans-serif, Arial;';
   var ua = navigator.userAgent.toLowerCase();
   var defaults = {
     type: 'auto',
