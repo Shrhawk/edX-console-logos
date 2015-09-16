@@ -33,8 +33,8 @@ console.open_edx_logo();
  - **log_text** Show text message on console.  
 ```default: false```
  - **url** Image url of logo in case of ```type:image``` or ```type:auto```  
-```default (edx_logo): https://d37djvu3ytnwxt.cloudfront.net/static/images/edx-theme/edx-header-logo.517a627deaad.png```  
-```default (open_edx_logo): https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png```
+```default (edx_logo)```: <sup>https://d37djvu3ytnwxt.cloudfront.net/static/images/edx-theme/edx-header-logo.517a627deaad.png</sup>  
+```default (open_edx_logo)```: <sup>https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png</sup>
  - **scale** Image scale for logo from 0.1 to 1
  - **open_edx_only** For ```open_edx_logo``` only if set ```true``` ignore the ```POWERED BY``` text, work only for css, smalltext, bigtext types  
 ```default: false```
@@ -43,5 +43,18 @@ console.open_edx_logo();
 
 - **text**  
   Text to show on console along with logo  
-```default (edx_logo): Want to contribute to edX-platform ? Visit at https://github.com/edx/edx-platform```  
-```default (open_edx_logo): POWERED BY OPEN edX```
+```default (edx_logo)```: <sup>Want to contribute to edX-platform ? Visit at https://github.com/edx/edx-platform</sup>  
+```default (open_edx_logo)```: <sup>POWERED BY OPEN edX</sup>
+
+## Browser Support
+Browser | Image | Css | Smalltext | Bigtext|
+---------|---------|---------|---------|---------|
+![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png)|Yes|Yes|Yes|Yes|
+![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png)|Yes|Yes|Yes|Yes|
+![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png)|Yes|Yes|Yes|Yes|
+![Firefox (FireBug)](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png)|No|V > 39|Yes|Yes|
+![Internet Explorer](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png)|No|No|Yes|Yes|
+
+## License
+
+(The MIT License)
