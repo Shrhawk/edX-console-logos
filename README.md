@@ -1,10 +1,10 @@
 # edX-console-logos
 This plugin shows edX and OPEN edX logos at browser console.
 ##### edX Logos
-[<img src="https://cloud.githubusercontent.com/assets/7054417/9888650/18060670-5bab-11e5-8410-c7ffb5f8ac73.png" alt="edX Logos" height="200px"  width="550px"/>](https://cloud.githubusercontent.com/assets/7054417/9888650/18060670-5bab-11e5-8410-c7ffb5f8ac73.png)
+[<img src="https://cloud.githubusercontent.com/assets/7054417/9888650/18060670-5bab-11e5-8410-c7ffb5f8ac73.png" alt="edX Logos" height="200px"/>](https://cloud.githubusercontent.com/assets/7054417/9888650/18060670-5bab-11e5-8410-c7ffb5f8ac73.png)
 ##### OPEN edX Logos
-[<img src="https://cloud.githubusercontent.com/assets/7054417/9888651/1841c804-5bab-11e5-8ef6-22d6b1c174a1.png" height="200px" width="550px" alt="OPEN edX Logos"/>](https://cloud.githubusercontent.com/assets/7054417/9888651/1841c804-5bab-11e5-8ef6-22d6b1c174a1.png)
-[<img src="https://cloud.githubusercontent.com/assets/7054417/9888652/1849fa6a-5bab-11e5-9326-c7ccac6d7191.png" height="200px" width="550px" alt="OPEN edX Logos"/>](https://cloud.githubusercontent.com/assets/7054417/9888652/1849fa6a-5bab-11e5-9326-c7ccac6d7191.png)
+[<img src="https://cloud.githubusercontent.com/assets/7054417/9888651/1841c804-5bab-11e5-8ef6-22d6b1c174a1.png" height="200px" alt="OPEN edX Logos"/>](https://cloud.githubusercontent.com/assets/7054417/9888651/1841c804-5bab-11e5-8ef6-22d6b1c174a1.png)
+[<img src="https://cloud.githubusercontent.com/assets/7054417/9888652/1849fa6a-5bab-11e5-9326-c7ccac6d7191.png" height="200px" alt="OPEN edX Logos"/>](https://cloud.githubusercontent.com/assets/7054417/9888652/1849fa6a-5bab-11e5-9326-c7ccac6d7191.png)
 
 ## Usage
 
